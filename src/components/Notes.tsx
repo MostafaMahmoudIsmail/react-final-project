@@ -79,7 +79,7 @@ const Notes = () => {
   };
 
   return (
-    <div className="p-4 max-w-3xl mx-auto bg-white shadow rounded-2xl">
+    <div className="p-4 max-w-3xl mx-auto bg-white shadow rounded-2xl mt-15">
       <h2 className="text-xl font-bold mb-4">Note Manager</h2>
 
       <div className="flex gap-2 mb-4">
@@ -110,8 +110,7 @@ const Notes = () => {
         </button>
       </div>
 
-      {/* Notes by category */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4 ">
         {Object.entries(groupedNotes).map(([key, notes]) => (
           <div key={key} className="border rounded p-3 bg-gray-50">
             <h3 className="font-semibold capitalize mb-2">{key} Notes</h3>
@@ -123,7 +122,7 @@ const Notes = () => {
             {notes.map((note) => (
               <div
                 key={note.id}
-                className="flex items-center justify-between bg-white border p-2 mb-2 rounded"
+                className="flex flex-col items-center justify-between bg-white border p-2 mb-2 rounded"
               >
                 <span>{note.text}</span>
                 <div className="flex gap-2">

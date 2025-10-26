@@ -28,7 +28,7 @@ const ListUsers = () => {
     );
 
   return (
-    <div className="max-w-3xl mx-auto mt-8 bg-white shadow-md rounded-2xl p-6">
+    <div className="mt-8 bg-white rounded-2xl p-6">
       <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">
          All Users
       </h2>
@@ -38,10 +38,10 @@ const ListUsers = () => {
           <li
             key={user.id}
             onClick={() => navigate(`/user/${user.id}`)}
-            className="flex justify-between items-center border border-gray-200 rounded-lg p-3 cursor-pointer hover:bg-blue-50 hover:shadow transition-all duration-200"
+            className="flex justify-between items-center border border-gray-200 rounded-lg p-3 cursor-pointer hover:bg-blue-50 transition-all duration-200"
           >
             <div>
-              <p className="font-semibold text-gray-800">{user.name}</p>
+              <p className="text-gray-800">{user.name}</p>
               <p className="text-sm text-gray-500">{user.email}</p>
             </div>
             <span className="text-blue-500 font-medium text-sm hover:underline">

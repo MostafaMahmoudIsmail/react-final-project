@@ -58,7 +58,7 @@ const AnalyticsCard = () => {
   )[0];
 
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-white shadow rounded-2xl mt-6">
+    <div className="mx-auto p-6 bg-white shadow rounded-2xl mt-6">
       <h2 className="text-xl font-bold mb-4"> Simple Analytics</h2>
 
       <div className="grid grid-cols-2 gap-4">

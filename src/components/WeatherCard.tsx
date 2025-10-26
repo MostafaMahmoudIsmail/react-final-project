@@ -45,8 +45,8 @@ const WeatherCard = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white shadow-lg rounded-2xl p-6 mt-8 text-center">
-      <h2 className="text-xl font-bold mb-4">🌦️ Weather Widget</h2>
+    <div className="mx-auto bg-white shadow-lg rounded-2xl p-6 mt-8 text-center">
+      <h2 className="text-xl font-bold mb-4"> Weather Widget</h2>
 
       <div className="flex justify-center gap-2 mb-4">
         <input

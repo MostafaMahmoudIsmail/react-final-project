@@ -13,8 +13,7 @@ const DashboardPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
-      {/* Header */}
-      <header className="max-w-6xl mx-auto mb-8 text-center">
+      <header className="mb-8 text-center">
         <h1 className="text-3xl font-bold text-gray-800 mb-2">
           Dashboard Page
         </h1>
@@ -28,7 +27,6 @@ const DashboardPage = () => {
         
         <div className="space-y-8">
           <ListUsers />
-          <Notes />
         </div>
 
         <div className="space-y-8">
@@ -36,6 +34,7 @@ const DashboardPage = () => {
           <WeatherCard />
         </div>
       </main>
+      <Notes />
     </div>
   );
 };
