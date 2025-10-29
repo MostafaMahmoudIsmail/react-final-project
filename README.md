@@ -11,6 +11,7 @@ A modern **React + TypeScript** application built with **Vite**, following clean
 - 🧹 **ESLint** — preconfigured with React + TypeScript rules  
 - 📁 **Clean project structure** — easy to extend and maintain  
 - 🔧 **Environment ready** — supports `.env`, testing, and CI/CD
+- 🧹 **ESLint** — preconfigured with React + TypeScript rules  
 
 ## 🚀 Getting Started
 

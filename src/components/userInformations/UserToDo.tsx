@@ -24,15 +24,12 @@ const UserToDo = ({ userId }: Props) => {
     enabled: !!userId,
   });
 
-  // 🧱 state محلي نشتغل عليه
   const [todos, setTodos] = useState<Todo[]>([]);
 
-  // لما تيجي الداتا أول مرة، نخزنها في state
   useEffect(() => {
     if (data) setTodos(data);
   }, [data]);
 
-  // 🌀 وظيفة لتبديل الحالة
   const toggleTodo = (id: number) => {
     setTodos((prev) =>
       prev.map((todo) =>
